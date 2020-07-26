@@ -91,7 +91,8 @@ names(tidy_average_data)[1] <- "subjectID"
 names(tidy_average_data)[2] <- "activityType" 
 
 ## Saving Data 
-submittedDataSet <- tidy_average_data
-write.table(submittedDataSet, "Submitted Dataset.txt", row.names = FALSE)
+FinalTidyData <- tidy_average_data
+write.table(FinalTidyData, "Final Tidy Data.txt", row.names = FALSE)
+View(FinalTidyData)
 
 
